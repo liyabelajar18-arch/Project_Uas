@@ -10,7 +10,7 @@ body{
     height:100vh;
     background:
         linear-gradient(rgba(0,0,0,.35),rgba(0,0,0,.35)),
-        url("gambar1.jpg");
+        url("gambar2.webp");
     background-size:cover;
     background-position:center;
     position:relative;
@@ -31,7 +31,7 @@ body{
     background:white;
 }
 .logo{
-    color:white;
+    color:rgb(253, 253, 253);
     font-size:32px;
     font-weight:bold;
     transition:.4s;
