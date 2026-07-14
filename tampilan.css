@@ -3,9 +3,12 @@
     padding:0;
     box-sizing:border-box;
 }
+
 body{
     font-family:Arial, Helvetica, sans-serif;
+    background:#f5f5f5;
 }
+
 .hero{
     height:100vh;
     background:
@@ -15,6 +18,7 @@ body{
     background-position:center;
     position:relative;
 }
+
 .navbar{
     position:absolute;
     top:0;
@@ -27,35 +31,43 @@ body{
     background:transparent;
     transition:.4s;
 }
+
 .navbar:hover{
     background:white;
 }
+
 .logo{
-    color:rgb(253, 253, 253);
+    color:white;
     font-size:32px;
     font-weight:bold;
     transition:.4s;
 }
+
 .nav-menu{
     display:flex;
     list-style:none;
     gap:35px;
 }
+
 .nav-menu a{
     color:white;
     text-decoration:none;
     font-weight:500;
     transition:.4s;
 }
+
 .nav-menu a:hover{
     color:#0077b6;
 }
+
 .navbar:hover .logo{
     color:#1d3557;
 }
+
 .navbar:hover .nav-menu a{
     color:#333;
 }
+
 .hero-content{
     height:100%;
     display:flex;
@@ -65,10 +77,57 @@ body{
     color:white;
     text-align:center;
 }
+
 .hero-content h1{
     font-size:85px;
     margin-bottom:20px;
 }
+
 .hero-content p{
     font-size:20px;
+}
+
+.explore{
+    background:#f5f5f5;
+    padding:0 20px 70px;
+    margin-top:-70px;
+    position:relative;
+    z-index:2;
+}
+
+.explore-box{
+    max-width:1000px;
+    margin:auto;
+    background:white;
+    padding:45px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 10px 30px rgba(0,0,0,.15);
+}
+
+.explore-box h2{
+    font-size:40px;
+    color:#1d3557;
+    margin-bottom:20px;
+}
+
+.explore-box p{
+    font-size:18px;
+    color:#555;
+    line-height:1.8;
+    margin-bottom:30px;
+}
+
+.btn{
+    display:inline-block;
+    padding:14px 35px;
+    background:#0077b6;
+    color:white;
+    text-decoration:none;
+    border-radius:30px;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#005f8d;
 }
