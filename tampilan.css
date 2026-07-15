@@ -131,102 +131,170 @@ body{
 .btn:hover{
     background:#005f8d;
 }
-.explore{
-    width: 100%;
-    padding: 80px 10%;
-    background: #ffffff;
-    text-align: center;
-}
-.explore-box{
-    max-width: 800px;
-    margin: auto;
-}
-.explore h2{
-    font-size: 42px;
-    color: #0f766e;
-}
-.explore p{
-    font-size: 18px;
-    color: #555;
-    line-height: 1.8;
-    margin-bottom: 35px;
-}
-.btn{
-   display: inline-block;
-   padding: 15px 35px;
-   background: #0f766e;
-   color: #ffffff;
-   text-decoration: none;
-   border-radius: 30px;
-   font-size: 17px;
-   transition: 0.3s; 
-}
-.btn:hover{
-    background: #09564f;
-}
 .destinasi{
-    padding: 80px 10%;
-    background: #f4f7f9;
+
+    padding:80px 10%;
+    background:#f5f5f5;
+
 }
-.destinasi h2{
-    text-align: center;
-    font-size: 40px;
-    color: #0f766e;
-    margin-bottom: 50px;
+
+.judul{
+
+    text-align:center;
+    margin-bottom:40px;
+
 }
-.card-container{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
-    gap: 30px;
+
+.swiper{
+
+    width:100%;
+    padding-bottom:60px;
+
 }
-.card{
-    background: #ffffff;
-    border-radius: 15px;
-    overflow: hidden;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-    transition: 0.3s;
+
+.swiper-slide{
+
+    background:white;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 10px 20px rgba(0,0,0,.15);
+
 }
-.card:hover{
-    transform: translateY(-10px);
-    box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+
+.swiper-slide img{
+
+    width:100%;
+    height:280px;
+    object-fit:cover;
+
 }
-.card img{
-    width: 100%;
-    height: 220px;
-    deject-fit:cover;
+
+.swiper-slide h3{
+
+    padding:20px;
+
 }
-.card h3{
-    font-size: 24px;
-    color: #0f766e;
-    padding: 20px 20px 10px;
+
+.swiper-slide p{
+
+    padding:0 20px 20px;
+
 }
-.card p{
-    padding: 0 20px;
-    color: #666;
-    line-height: 1.7;
-    min-height: 110px;
-}
-.btn-card{
-    display: inline-block;
-    margin: 20px;
-    padding: 12px 25px;
-    background: #0f766e;
+
+.swiper-slide a{
+
+    display:inline-block;
+    margin:20px;
+    padding:12px 25px;
+    background:#0F766E;
     color:white;
-    text-decoration: none;
-    border-radius: 25px;
-    transition: .3s;
+    text-decoration:none;
+    border-radius:30px;
+
 }
-.btn-card:hover{
-    background: #09564f;
+/* ==========================
+   SWIPER NAVIGATION
+========================== */
+
+.swiper-button-next,
+.swiper-button-prev{
+    color:#0F766E;
+    width:50px;
+    height:50px;
+    background:#fff;
+    border-radius:50%;
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
 }
-@media(max-widt:768px);{
-    .explore h2{
-        font-size: 32px;
+
+.swiper-button-next::after,
+.swiper-button-prev::after{
+    font-size:22px;
+    font-weight:bold;
+}
+
+/* ==========================
+   PAGINATION
+========================== */
+
+.swiper-pagination{
+    margin-top:20px;
+}
+
+.swiper-pagination-bullet{
+    width:12px;
+    height:12px;
+    background:#999;
+    opacity:1;
+}
+
+.swiper-pagination-bullet-active{
+    background:#0F766E;
+}
+
+/* ==========================
+   ANIMASI CARD
+========================== */
+
+.swiper-slide{
+    transition:0.4s ease;
+}
+
+.swiper-slide:hover{
+    transform:translateY(-10px);
+}
+
+.swiper-slide a:hover{
+    background:#09564F;
+}
+
+@media (max-width:1024px){
+
+    .hero-content h1{
+        font-size:60px;
     }
-    .destinasi h2{
-        font-size: 32px;
+
+    .hero-content p{
+        font-size:18px;
     }
-    .card-container{
-        grid-template-columns: 1fr;
+
+}
+
+@media (max-width:768px){
+
+    .navbar{
+        flex-direction:column;
+        gap:20px;
     }
+
+    .nav-menu{
+        flex-direction:column;
+        text-align:center;
+        gap:15px;
+    }
+
+    .hero-content h1{
+        font-size:45px;
+    }
+
+    .hero-content p{
+        width:90%;
+        font-size:16px;
+    }
+
+    .explore-box{
+        padding:30px;
+    }
+
+    .explore-box h2{
+        font-size:30px;
+    }
+
+    .explore-box p{
+        font-size:16px;
+    }
+
+    .judul h2{
+        font-size:32px;
+    }
+
 }

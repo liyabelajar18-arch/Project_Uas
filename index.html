@@ -4,84 +4,187 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Purwakarta Explore</title>
+
     <link rel="stylesheet" href="tampilan.css">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 </head>
+
 <body>
 
+<!-- ================= HERO ================= -->
+
 <section class="hero">
+
     <header class="navbar">
+
         <div class="logo">
             Purwakarta Explore
         </div>
+
         <ul class="nav-menu">
             <li><a href="#destinasi">Destinasi</a></li>
             <li><a href="#pengalaman">Pengalaman</a></li>
             <li><a href="#rencana">Rencanakan Perjalanan</a></li>
             <li><a href="#informasi">Informasi</a></li>
         </ul>
+
     </header>
+
     <div class="hero-content">
+
         <h1>Jelajahi Purwakarta</h1>
+
         <p>
             Temukan destinasi wisata terbaik di Purwakarta.
         </p>
+
     </div>
+
 </section>
+
+<!-- ================= EXPLORE ================= -->
+
 <section class="explore">
+
     <div class="explore-box">
+
         <h2>Yuk Jelajahi Purwakarta!</h2>
+
         <p>
             Nikmati keindahan alam, wisata sejarah, kuliner khas,
             hingga berbagai destinasi menarik yang ada di Kabupaten Purwakarta.
-        </p> 
-        <a href="#destinasi" class="btn">Jelajahi Sekarang</a>
+        </p>
+
+        <a href="#destinasi" class="btn">
+            Jelajahi Sekarang
+        </a>
+
     </div>
+
 </section>
+
+<!-- ================= DESTINASI ================= -->
+
 <section id="destinasi" class="destinasi">
-    <h2>Destinasi Populer Purwakarta</h2>
-    <div class="card-container">
-        <div class="card">
-            <img src="jatiluhur1.jpg" alt="Waduk Jatiluhur">
-            <p>Waduk terbesar di indonesia yang menawarkan panorama alam,
-                wisata air, memancing, hingga area camping.
-            </p>
-            <a href="#" class="btn-card">Lihat Detail</a>
-        </div>
-        <div class="card">
-            <img src="situ-buleud2.webp" alt="Situ Buleud">
-            <h3>Situ Buleud</h3>
-            <p> Ikon wisata purwakarta yang terkenal dengan taman kota, air mancur sribaduga dan suasana yang nyaman.</p>
-            <a href="#" class="btn-card">Lihat Detail</a>
-        </div>
-        <div class="card">
-            <img src="pargom.jpeg" alt="Parang Gombong">
-            <h3>Parang Gombong</h3>
-            <p>Tempat favorit bagi pencipta alam yang ingin mencoba camping
-                yang bisa melihat pemandangan yang luas.
-            </p>
-            <a href="#" class="btn-card">Lihat Detail</a>
-        </div>
-        <div class="card">
-            <img src="lembu.jpeg" alt="Gunung Lembu">
-            <h3>Gunung Lembu</h3>
-            <p>Gunung ini sangat populer di kalangan pendaki pemula karena jalur yang relatif pendek. Pendakian menuju puncak umumnya memakan waktu sekitar 2 hingga 3 jam, melewati vegetasi hutan bambu dan area tanah lapang seperti Pondok Saung Ceria. Di sepanjang perjalanan menuju puncak, terdapat spot ikonik seperti Batu Lembu yang langsung berbatasan dengan jurang dan pemandangan waduk di bawahnya.</p>
-            <a href="#" class="btn-card">Lihat Detail</a>
-        </div>
-        <div class="card">
-            <img src="curug.jpeg" alt="curug Tilu">
-            <h3>Curug Tilu</h3>
-            <p>Air Terjun alami dengan udara sejuk yang cocok
-                untuk melepas penat.
-            </p>
-            <a href="#" class="btn-card">Lihat Detail</a>
-        </div>
-        <div class="card">
-            <img src="situ wanayasa.jpeg" alt="Situ Wanayasa">
-            <h3>Situ Wayanayasa</h3>
-            <p>Situ Wanayasa adalah danau alam seluas ±7 hektare di Kecamatan Wanayasa, Purwakarta. Berada di ketinggian 600-800 mdpl, destinasi ini menawarkan udara sejuk dan pemandangan Gunung Burangrang. Daya tarik utamanya meliputi pulau kecil di tengah danau Pasir Mantri yang memuat makam pendiri Purwakarta, RA. Suriawinata</p>
-            <a href="#" class="btn-card">Lihat Detail</a>
-        </div>
+
+    <div class="judul">
+
+        <h2>Jelajahi Destinasi Purwakarta</h2>
+
+        <p>
+            Geser untuk melihat berbagai destinasi wisata terbaik
+            yang ada di Purwakarta.
+        </p>
+
     </div>
+
+    <div class="swiper wisataSlider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+                <img src="jatiluhur1.jpg" alt="">
+                <h3>Waduk Jatiluhur</h3>
+                <p>Danau terbesar di Indonesia.</p>
+                <a href="#">Lihat Detail</a>
+            </div>
+
+            <div class="swiper-slide">
+                <img src="situ-buleud2.webp" alt="">
+                <h3>Situ Buleud</h3>
+                <p>Ikon Kota Purwakarta.</p>
+                <a href="#">Lihat Detail</a>
+            </div>
+
+            <div class="swiper-slide">
+                <img src="pargom.jpeg" alt="">
+                <h3>Parang Gombong</h3>
+                <p>Wisata favorit keluarga.</p>
+                <a href="#">Lihat Detail</a>
+            </div>
+
+            <div class="swiper-slide">
+                <img src="lembu.jpeg" alt="">
+                <h3>Gunung Lembu</h3>
+                <p>Pemandangan alam yang indah.</p>
+                <a href="#">Lihat Detail</a>
+            </div>
+
+            <div class="swiper-slide">
+                <img src="sribaduga.jpg" alt="">
+                <h3>Air Mancur Sri Baduga</h3>
+                <p>Ikon wisata malam Purwakarta.</p>
+                <a href="#">Lihat Detail</a>
+            </div>
+
+            <div class="swiper-slide">
+                <img src="maranggi.jpg" alt="">
+                <h3>Sate Maranggi</h3>
+                <p>Kuliner khas yang wajib dicoba.</p>
+                <a href="#">Lihat Detail</a>
+            </div>
+
+        </div>
+
+        <!-- Pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- Navigation -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+
+    </div>
+
 </section>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+
+<script>
+
+const swiper = new Swiper(".wisataSlider",{
+
+    slidesPerView:3,
+    spaceBetween:30,
+
+    loop:true,
+
+    autoplay:{
+        delay:3000,
+        disableOnInteraction:false,
+    },
+
+    pagination:{
+        el:".swiper-pagination",
+        clickable:true,
+    },
+
+    navigation:{
+        nextEl:".swiper-button-next",
+        prevEl:".swiper-button-prev",
+    },
+
+    breakpoints:{
+
+        0:{
+            slidesPerView:1,
+        },
+
+        768:{
+            slidesPerView:2,
+        },
+
+        1024:{
+            slidesPerView:3,
+        }
+
+    }
+
+});
+
+</script>
+
 </body>
 </html>
