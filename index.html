@@ -4,17 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Purwakarta Explore</title>
-
     <link rel="stylesheet" href="tampilan.css">
-
-    <!-- Swiper CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 </head>
-
 <body>
-
-<!-- ================= HERO ================= -->
-
 <section class="hero">
 
     <header class="navbar">
@@ -22,16 +15,13 @@
         <div class="logo">
             Purwakarta Explore
         </div>
-
         <ul class="nav-menu">
             <li><a href="#destinasi">Destinasi</a></li>
             <li><a href="#pengalaman">Pengalaman</a></li>
             <li><a href="#rencana">Rencanakan Perjalanan</a></li>
             <li><a href="#informasi">Informasi</a></li>
         </ul>
-
     </header>
-
     <div class="hero-content">
 
         <h1>Jelajahi Purwakarta</h1>
@@ -39,58 +29,36 @@
         <p>
             Temukan destinasi wisata terbaik di Purwakarta.
         </p>
-
     </div>
-
 </section>
-
-<!-- ================= EXPLORE ================= -->
-
 <section class="explore">
-
     <div class="explore-box">
-
         <h2>Yuk Jelajahi Purwakarta!</h2>
-
         <p>
             Nikmati keindahan alam, wisata sejarah, kuliner khas,
             hingga berbagai destinasi menarik yang ada di Kabupaten Purwakarta.
         </p>
-
-        <a href="#destinasi" class="btn">
+         <a href="#destinasi" class="btn">
             Jelajahi Sekarang
         </a>
-
     </div>
-
 </section>
-
-<!-- ================= DESTINASI ================= -->
-
 <section id="destinasi" class="destinasi">
-
     <div class="judul">
-
         <h2>Jelajahi Destinasi Purwakarta</h2>
-
         <p>
             Geser untuk melihat berbagai destinasi wisata terbaik
             yang ada di Purwakarta.
         </p>
-
     </div>
-
     <div class="swiper wisataSlider">
-
         <div class="swiper-wrapper">
-
             <div class="swiper-slide">
                 <img src="jatiluhur1.jpg" alt="">
                 <h3>Waduk Jatiluhur</h3>
                 <p>Danau terbesar di Indonesia.</p>
                 <a href="#">Lihat Detail</a>
             </div>
-
             <div class="swiper-slide">
                 <img src="situ-buleud2.webp" alt="">
                 <h3>Situ Buleud</h3>
@@ -125,25 +93,15 @@
                 <p>Kuliner khas yang wajib dicoba.</p>
                 <a href="#">Lihat Detail</a>
             </div>
-
         </div>
-
-        <!-- Pagination -->
         <div class="swiper-pagination"></div>
-
-        <!-- Navigation -->
         <div class="swiper-button-next"></div>
         <div class="swiper-button-prev"></div>
 
     </div>
-
 </section>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-
-
 <script>
-
 const swiper = new Swiper(".wisataSlider",{
 
     slidesPerView:3,
