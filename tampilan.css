@@ -146,101 +146,101 @@ body{
 }
 
 .swiper{
-
-    width:100%;
-    padding-bottom:60px;
-
+    padding-bottom:80px;
+    position: relative;
+    overflow: visible;
 }
 
 .swiper-slide{
 
     background:white;
-    border-radius:20px;
+    border-radius:18px;
     overflow:hidden;
-    box-shadow:0 10px 20px rgba(0,0,0,.15);
+    box-shadow:0 8px 20px rgba(0,0,0,.12);
+    height: 420px;
+    display: flex;
+    flex-direction: column;
 
 }
 
 .swiper-slide img{
 
     width:100%;
-    height:280px;
+    height:250px;
     object-fit:cover;
 
 }
 
 .swiper-slide h3{
 
-    padding:20px;
+    padding:20px 20px 8px;
+    font-size: 25px;
+    font-weight: 600px;
+    line-height: 1.2;
+    color: #222;
+
 
 }
 
 .swiper-slide p{
 
-    padding:0 20px 20px;
+    padding:0 20px;
+    color: #666;
+    font-size: 18px;
+    line-height: 1.6;
 
 }
 
 .swiper-slide a{
-
-    display:inline-block;
-    margin:20px;
-    padding:12px 25px;
-    background:#0F766E;
-    color:white;
-    text-decoration:none;
-    border-radius:30px;
+    display: none;
 
 }
-/* ==========================
-   SWIPER NAVIGATION
-========================== */
-
-.swiper-button-next,
+.swiper-button-next{
+    right: -45px;
+}
 .swiper-button-prev{
-    color:#0F766E;
-    width:50px;
-    height:50px;
-    background:#fff;
-    border-radius:50%;
-    box-shadow:0 5px 15px rgba(0,0,0,.15);
+
+    width:55px;
+    height:55px;
+    background: none;
+    box-shadow:none;
+    color: #fffff;
+    font-weight:bold;
+    left: -45px;
 }
 
 .swiper-button-next::after,
 .swiper-button-prev::after{
-    font-size:22px;
-    font-weight:bold;
+    font-size:42px;
 }
-
-/* ==========================
-   PAGINATION
-========================== */
-
 .swiper-pagination{
-    margin-top:20px;
+    position: absolute !important;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -40px !important;
+    width: auto !;
+    margin-top: 40px;
 }
-
 .swiper-pagination-bullet{
-    width:12px;
-    height:12px;
-    background:#999;
-    opacity:1;
+    width:10px;
+    height:10x;
 }
-
 .swiper-pagination-bullet-active{
-    background:#0F766E;
+    background:#0077b6;
 }
-
-/* ==========================
-   ANIMASI CARD
-========================== */
 
 .swiper-slide{
-    transition:0.4s ease;
+    background:#fff;
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 8px 20px rgba(0,0,0,.12);
+    display:flex;
+    flex-direction:column;
+    height:auto;
 }
 
 .swiper-slide:hover{
-    transform:translateY(-10px);
+    transform:translateY(-8px);
 }
 
 .swiper-slide a:hover{
@@ -285,16 +285,19 @@ body{
         padding:30px;
     }
 
-    .explore-box h2{
+.explore-box h2{
         font-size:30px;
-    }
+}
 
-    .explore-box p{
+.explore-box p{
         font-size:16px;
-    }
+}
 
-    .judul h2{
-        font-size:32px;
-    }
+.judul h2{
+    font-size:32px;
+}
 
+}
+.swiper-wrapper{
+    align-items: stretch;
 }
