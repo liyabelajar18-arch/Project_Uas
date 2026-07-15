@@ -154,10 +154,11 @@ body{
 
 .swiper-slide{
 
-    background:white;
-    border-radius:20px;
+    background:#fff;
+    border-radius:18px;
     overflow:hidden;
-    box-shadow:0 10px 20px rgba(0,0,0,.15);
+    box-shadow:0 4px 14px rgba(0,0,0,.15);
+    transition:.3s ease;
 
 }
 
@@ -198,23 +199,28 @@ body{
 
 .swiper-button-next,
 .swiper-button-prev{
-    color:#0F766E;
-    width:50px;
-    height:50px;
-    background:#fff;
+    width:40px;
+    height:40px;
+    background:rgba(255,255,255,.75);
+    backdrop-filter:blur(8px);
     border-radius:50%;
-    box-shadow:0 5px 15px rgba(0,0,0,.15);
+    color:#444;
+    box-shadow:0 2px 8px rgba(0,0,0,.08);
+    transition:.3s;
 }
 
 .swiper-button-next::after,
 .swiper-button-prev::after{
-    font-size:22px;
+    font-size:16px;
     font-weight:bold;
 }
 
-/* ==========================
-   PAGINATION
-========================== */
+.swiper-button-next:hover,
+.swiper-button-prev:hover{
+    background:#fff;
+    color:#0F766E;
+    transform:scale(1.1);
+}
 
 .swiper-pagination{
     margin-top:20px;
@@ -240,12 +246,14 @@ body{
 }
 
 .swiper-slide:hover{
-    transform:translateY(-10px);
+    transform:translateY(-6px);
+    box-shadow: 0 10px 24px rgba(0,0,0,.12);
 }
 
 .swiper-slide a:hover{
     background:#09564F;
 }
+
 
 @media (max-width:1024px){
 
