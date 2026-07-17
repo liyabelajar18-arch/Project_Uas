@@ -187,41 +187,50 @@ body{
     opacity:.85;
 }
 
-.explore{
-    background:#f5f5f5;
-    padding:0 20px 70px;
+.feature{
     margin-top:-70px;
     position:relative;
-    z-index:2;
+    z-index:99;
 }
 
-.explore-box{
-    max-width:1000px;
+.feature .container{
+    width:90%;
+    max-width:1200px;
     margin:auto;
-    background:white;
-    padding:45px;
+    background:#fff;
     border-radius:20px;
-    text-align:center;
-    box-shadow:0 10px 30px rgba(0,0,0,.15);
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:30px;
+    padding:35px;
+    box-shadow:0 15px 40px rgba(0,0,0,.12);
 }
 
-.explore-box h2{
-    font-size:40px;
-    color:#1d3557;
-    margin-bottom:20px;
+.feature-item p{
+    color:#1D3557;
 }
 
-.explore-box p{
-    font-size:18px;
-    color:#555;
-    line-height:1.8;
-    margin-bottom:30px;
+.feature-item{
+    display:flex;
+    gap:15px;
+    align-items:flex-start;
 }
 
+.feature-item i{
+    width:55px;
+    height:55px;
+    background:#EAF3FF;
+    color:#1D3557;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:24px;
+}
 .btn{
     display:inline-block;
     padding:14px 35px;
-    background:#0077b6;
+    background:#1D3557;
     color:white;
     text-decoration:none;
     border-radius:30px;
@@ -345,6 +354,689 @@ body{
 
 .swiper-slide a:hover{
     background:#09564F;
+}
+
+/* ===========================
+   RENCANAKAN PERJALANAN
+=========================== */
+
+.trip{
+    padding:100px 8%;
+    background:
+    linear-gradient(rgba(10,25,45,.75),rgba(10,25,45,.75)),
+    url("background-trip.jpg");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+}
+
+.trip-container{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:80px;
+    align-items:center;
+}
+
+/* ===========================
+   BAGIAN GAMBAR
+=========================== */
+
+.trip-image{
+    position:relative;
+    height:550px;
+}
+
+.trip-image img{
+    position:absolute;
+    object-fit:cover;
+    border-radius:22px;
+    border:2px solid rgba(255,255,255,.3);
+    box-shadow:0 15px 35px rgba(0,0,0,.35);
+    transition:.4s;
+}
+
+.trip-image img:hover{
+    transform:scale(1.05);
+}
+
+.img1{
+    width:340px;
+    height:450px;
+    left:0;
+    top:0;
+}
+
+.img2{
+    width:190px;
+    height:140px;
+    right:40px;
+    top:180px;
+}
+
+.img3{
+    width:190px;
+    height:140px;
+    right:60px;
+    bottom:0;
+}
+
+/* ===========================
+   CARD KECIL
+=========================== */
+
+.trip-card{
+    position:absolute;
+    left:-20px;
+    bottom:35px;
+
+    display:flex;
+    align-items:center;
+    gap:15px;
+
+    padding:20px;
+
+    background:rgba(18,28,44,.8);
+    backdrop-filter:blur(10px);
+
+    border-radius:18px;
+    color:white;
+    box-shadow:0 15px 30px rgba(0,0,0,.3);
+}
+
+.trip-card i{
+    font-size:28px;
+    color:#4DA3FF;
+}
+
+.trip-card h4{
+    margin-bottom:5px;
+}
+
+.trip-card p{
+    font-size:14px;
+    color:#ddd;
+}
+
+/* ===========================
+   ISI KANAN
+=========================== */
+
+.trip-content{
+    color:white;
+}
+
+.trip-content span{
+    color:#90CAF9;
+    font-size:14px;
+    letter-spacing:2px;
+    font-weight:bold;
+}
+
+.trip-content h2{
+    font-size:52px;
+    line-height:1.2;
+    margin:18px 0 20px;
+}
+
+.trip-content>p{
+    color:#ddd;
+    line-height:1.8;
+    margin-bottom:35px;
+}
+
+/* ===========================
+   STEP
+=========================== */
+
+.step{
+    display:flex;
+    gap:20px;
+    margin-bottom:25px;
+}
+
+.number{
+    width:55px;
+    height:55px;
+
+    border:2px solid white;
+    border-radius:50%;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-weight:bold;
+    flex-shrink:0;
+}
+
+.step h4{
+    margin-bottom:6px;
+    font-size:20px;
+}
+
+.step p{
+    color:#ddd;
+    font-size:15px;
+}
+
+/* ===========================
+   BUTTON
+=========================== */
+
+.trip-btn{
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+
+    margin-top:25px;
+
+    padding:15px 35px;
+
+    background:#2563EB;
+    color:white;
+    text-decoration:none;
+
+    border-radius:40px;
+
+    transition:.3s;
+}
+
+.trip-btn:hover{
+    background:#1D4ED8;
+    transform:translateY(-4px);
+}
+/* ===========================
+   PENGALAMAN
+=========================== */
+
+.pengalaman{
+    padding:100px 8%;
+    background:#f8fafc;
+}
+
+.section-title,
+.testimonial-title{
+    text-align:center;
+    margin-bottom:60px;
+}
+
+.section-title span,
+.testimonial-title span{
+    color:#2563EB;
+    font-size:14px;
+    font-weight:bold;
+    letter-spacing:2px;
+}
+
+.section-title h2,
+.testimonial-title h2{
+    margin-top:10px;
+    font-size:46px;
+    color:#1e293b;
+}
+
+/* CARD */
+
+.experience-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:25px;
+    margin-bottom:100px;
+}
+
+.experience-card{
+
+    background:#fff;
+
+    border-radius:22px;
+
+    padding:40px 30px;
+
+    text-align:center;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+    transition:.4s;
+
+}
+
+.experience-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 20px 40px rgba(0,0,0,.15);
+
+}
+
+.experience-card i{
+
+    width:80px;
+
+    height:80px;
+
+    background:#EEF4FF;
+
+    color:#2563EB;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    margin:auto;
+
+    font-size:30px;
+
+    margin-bottom:25px;
+
+}
+
+.experience-card h3{
+
+    margin-bottom:15px;
+
+    color:#1E293B;
+
+}
+
+.experience-card p{
+
+    color:#64748B;
+
+    line-height:1.8;
+
+}
+
+/* TESTIMONI */
+
+.testimonial-box{
+
+    background:white;
+
+    border-radius:25px;
+
+    display:grid;
+
+    grid-template-columns:280px 1fr;
+
+    overflow:hidden;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+}
+
+.profile{
+
+    padding:40px;
+
+    text-align:center;
+
+    border-right:1px solid #eee;
+
+}
+
+.profile img{
+
+    width:90px;
+
+    height:90px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+    margin-bottom:15px;
+
+}
+
+.profile h4{
+
+    margin-bottom:5px;
+
+}
+
+.profile span{
+
+    color:#64748B;
+
+}
+
+.star{
+
+    color:#FACC15;
+
+    margin-top:15px;
+
+    font-size:22px;
+
+}
+
+.testimonial-text{
+
+    padding:50px;
+
+}
+
+.testimonial-text i{
+
+    color:#2563EB;
+
+    font-size:35px;
+
+    margin-bottom:20px;
+
+}
+
+.testimonial-text p{
+
+    color:#475569;
+
+    line-height:2;
+
+}
+/*==========================
+        FOOTER
+==========================*/
+
+.footer{
+
+    background:#0f172a;
+
+    color:white;
+
+    padding:70px 8% 30px;
+
+}
+
+.footer-container{
+
+    display:grid;
+
+    grid-template-columns:2fr 1fr 1fr 1.3fr;
+
+    gap:50px;
+
+}
+
+.footer-box h2{
+
+    margin-bottom:20px;
+
+    font-size:28px;
+
+}
+
+.footer-box h3{
+
+    margin-bottom:20px;
+
+    font-size:22px;
+
+}
+
+.footer-box p{
+
+    color:#cbd5e1;
+
+    line-height:1.8;
+
+    margin-bottom:12px;
+
+}
+
+.footer-box ul{
+
+    list-style:none;
+
+}
+
+.footer-box ul li{
+
+    margin-bottom:12px;
+
+}
+
+.footer-box ul li a{
+
+    color:#cbd5e1;
+
+    text-decoration:none;
+
+    transition:.3s;
+
+}
+
+.footer-box ul li a:hover{
+
+    color:#3b82f6;
+
+}
+
+.footer-social{
+
+    display:flex;
+
+    gap:15px;
+
+    margin-top:20px;
+
+}
+
+.footer-social a{
+
+    width:42px;
+
+    height:42px;
+
+    background:rgba(255,255,255,.08);
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    color:white;
+
+    text-decoration:none;
+
+    transition:.3s;
+
+}
+
+.footer-social a:hover{
+
+    background:#2563eb;
+
+    transform:translateY(-5px);
+
+}
+
+.footer-box i{
+
+    color:#3b82f6;
+
+    margin-right:10px;
+
+}
+
+.footer hr{
+
+    margin:40px 0 20px;
+
+    border:none;
+
+    height:1px;
+
+    background:rgba(255,255,255,.1);
+
+}
+
+.footer-bottom{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+}
+
+.footer-bottom p{
+
+    color:#94a3b8;
+
+}
+
+.footer-bottom a{
+
+    color:#94a3b8;
+
+    text-decoration:none;
+
+    margin-left:25px;
+
+    transition:.3s;
+
+}
+
+.footer-bottom a:hover{
+
+    color:white;
+
+}
+
+/* Responsive */
+
+@media(max-width:991px){
+
+.footer-container{
+
+grid-template-columns:1fr 1fr;
+
+}
+
+.footer-bottom{
+
+flex-direction:column;
+
+gap:20px;
+
+text-align:center;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.footer-container{
+
+grid-template-columns:1fr;
+
+}
+
+}
+
+/* RESPONSIVE */
+
+@media(max-width:991px){
+
+    .experience-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+    .testimonial-box{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .profile{
+
+        border-right:none;
+
+        border-bottom:1px solid #eee;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .experience-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .section-title h2,
+    .testimonial-title h2{
+
+        font-size:34px;
+
+    }
+
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:991px){
+
+    .trip-container{
+        grid-template-columns:1fr;
+        gap:60px;
+    }
+
+    .trip-image{
+        height:500px;
+    }
+
+    .trip-content{
+        text-align:center;
+    }
+
+    .step{
+        justify-content:center;
+        text-align:left;
+    }
+
+}
+
+@media(max-width:768px){
+
+    .trip{
+        padding:80px 20px;
+    }
+
+    .trip-image{
+        height:430px;
+    }
+
+    .img1{
+        width:240px;
+        height:340px;
+    }
+
+    .img2,
+    .img3{
+        width:140px;
+        height:110px;
+    }
+
+    .trip-content h2{
+        font-size:38px;
+    }
+
 }
 
 @media (max-width:1024px){
