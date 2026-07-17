@@ -37,10 +37,35 @@ body{
 }
 
 .logo{
+    display:flex;
+    align-items:center;
+    gap:12px;
     color:white;
-    font-size:32px;
-    font-weight:bold;
     transition:.4s;
+}
+
+.logo svg{
+    width:34px;
+    height:34px;
+    flex-shrink:0;
+}
+
+.logo-text{
+    display:flex;
+    flex-direction:column;
+    line-height:1.2;
+    text-align:left;
+}
+
+.logo-title{
+    font-size:22px;
+    font-weight:bold;
+}
+
+.logo-subtitle{
+    font-size:12px;
+    font-weight:400;
+    opacity:.8;
 }
 
 .nav-menu{
@@ -60,6 +85,21 @@ body{
     color:#0077b6;
 }
 
+.btn-nav{
+    background:#1d3557;
+    color:white;
+    text-decoration:none;
+    font-weight:500;
+    padding:12px 26px;
+    border-radius:30px;
+    transition:.4s;
+    white-space:nowrap;
+}
+
+.btn-nav:hover{
+    background:#0077b6;
+}
+
 .navbar:hover .logo{
     color:#1d3557;
 }
@@ -76,15 +116,75 @@ body{
     align-items:center;
     color:white;
     text-align:center;
+    padding:0 20px;
 }
 
 .hero-content h1{
-    font-size:85px;
+    font-size:72px;
+    line-height:1.1;
     margin-bottom:20px;
 }
 
 .hero-content p{
     font-size:20px;
+    max-width:600px;
+    margin-bottom:35px;
+}
+
+.hero-buttons{
+    display:flex;
+    gap:18px;
+}
+
+.btn-outline{
+    background:transparent;
+    border:1px solid white;
+}
+
+.btn-outline:hover{
+    background:rgba(255,255,255,.15);
+}
+
+.hero-stat-card{
+    position:absolute;
+    bottom:100px;
+    right:8%;
+    display:flex;
+    align-items:center;
+    gap:16px;
+    background:rgba(20,20,20,.55);
+    backdrop-filter:blur(6px);
+    color:white;
+    padding:18px 22px;
+    border-radius:16px;
+    max-width:300px;
+}
+
+.hero-stat-icon{
+    width:40px;
+    height:40px;
+    flex-shrink:0;
+    background:rgba(255,255,255,.15);
+    border-radius:10px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.hero-stat-icon svg{
+    width:20px;
+    height:20px;
+}
+
+.hero-stat-title{
+    font-weight:bold;
+    font-size:15px;
+    margin-bottom:2px;
+}
+
+.hero-stat-desc{
+    font-size:13px;
+    opacity:.85;
 }
 
 .explore{
@@ -279,6 +379,16 @@ body{
     .hero-content p{
         width:90%;
         font-size:16px;
+    }
+
+    .btn-nav{
+        padding:10px 20px;
+    }
+
+    .hero-stat-card{
+        position:static;
+        margin:30px auto 0;
+        max-width:90%;
     }
 
     .explore-box{
