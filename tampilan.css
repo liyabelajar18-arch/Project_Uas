@@ -10,10 +10,10 @@ body{
 }
 
 .hero{
-    height:100vh;
+    height:90vh;
     background:
         linear-gradient(rgba(0,0,0,.35),rgba(0,0,0,.35)),
-        url("gambar2.webp");
+        url("bandung\ estetik.jpg");
     background-size:cover;
     background-position:center;
     position:relative;
@@ -301,10 +301,6 @@ body{
     border-radius:30px;
 
 }
-/* ==========================
-   SWIPER NAVIGATION
-========================== */
-
 .swiper-button-next,
 .swiper-button-prev{
     color:#0F766E;
@@ -320,46 +316,27 @@ body{
     font-size:22px;
     font-weight:bold;
 }
-
-/* ==========================
-   PAGINATION
-========================== */
-
 .swiper-pagination{
     margin-top:20px;
 }
-
 .swiper-pagination-bullet{
     width:12px;
     height:12px;
     background:#999;
     opacity:1;
 }
-
 .swiper-pagination-bullet-active{
     background:#0F766E;
 }
-
-/* ==========================
-   ANIMASI CARD
-========================== */
-
 .swiper-slide{
     transition:0.4s ease;
 }
-
 .swiper-slide:hover{
     transform:translateY(-10px);
 }
-
 .swiper-slide a:hover{
     background:#09564F;
 }
-
-/* ===========================
-   RENCANAKAN PERJALANAN
-=========================== */
-
 .trip{
     padding:100px 8%;
     background:
@@ -369,18 +346,12 @@ body{
     background-position:center;
     background-repeat:no-repeat;
 }
-
 .trip-container{
     display:grid;
     grid-template-columns:1fr 1fr;
     gap:80px;
     align-items:center;
 }
-
-/* ===========================
-   BAGIAN GAMBAR
-=========================== */
-
 .trip-image{
     position:relative;
     height:550px;
@@ -420,10 +391,6 @@ body{
     bottom:0;
 }
 
-/* ===========================
-   CARD KECIL
-=========================== */
-
 .trip-card{
     position:absolute;
     left:-20px;
@@ -456,11 +423,6 @@ body{
     font-size:14px;
     color:#ddd;
 }
-
-/* ===========================
-   ISI KANAN
-=========================== */
-
 .trip-content{
     color:white;
 }
@@ -483,11 +445,6 @@ body{
     line-height:1.8;
     margin-bottom:35px;
 }
-
-/* ===========================
-   STEP
-=========================== */
-
 .step{
     display:flex;
     gap:20px;
@@ -519,10 +476,6 @@ body{
     font-size:15px;
 }
 
-/* ===========================
-   BUTTON
-=========================== */
-
 .trip-btn{
     display:inline-flex;
     align-items:center;
@@ -545,10 +498,6 @@ body{
     background:#1D4ED8;
     transform:translateY(-4px);
 }
-/* ===========================
-   PENGALAMAN
-=========================== */
-
 .pengalaman{
     padding:100px 8%;
     background:#f8fafc;
@@ -940,11 +889,7 @@ text-align:center;
 grid-template-columns:1fr;
 
 }
-
 }
-
-/* RESPONSIVE */
-
 @media(max-width:991px){
 
     .experience-grid{
@@ -985,11 +930,6 @@ grid-template-columns:1fr;
     }
 
 }
-
-/* ===========================
-   RESPONSIVE
-=========================== */
-
 @media(max-width:991px){
 
     .trip-container{
