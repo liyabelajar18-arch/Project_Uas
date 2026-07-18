@@ -267,7 +267,7 @@ body{
     border-radius:22px;
     overflow:hidden;
     margin: 15px 10px;
-    box-shadow:noen !important;
+    box-shadow:none!important;
 
 }
 
@@ -320,7 +320,7 @@ body{
 }
 .swiper-pagination{
     position: relative;
-    margin-top:40px;
+    margin-top:90px;
 }
 .swiper-pagination-bullet{
     width:12px;
@@ -737,41 +737,32 @@ body{
 }
 
 .footer-social{
-
     display:flex;
-
     gap:15px;
-
     margin-top:20px;
-
 }
-
+.fa-youtube{
+    font-size: 34px;
+}
+.fa-instagram,
+.fa-whatsapp{
+    font-size: 30px;
+}
 .footer-social a{
-
-    width:42px;
-
-    height:42px;
-
+    width:60px;
+    height:60px;
     background:rgba(255,255,255,.08);
-
     border-radius:50%;
-
     display:flex;
-
     justify-content:center;
-
     align-items:center;
-
     color:white;
-
     text-decoration:none;
-
     transition:.3s;
-
+    font-size: 35px;
+    
 }
-
 .footer-social a:hover{
-
     background:#2563eb;
 
     transform:translateY(-5px);
