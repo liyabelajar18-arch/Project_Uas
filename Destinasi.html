@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 </head>
 <body>
-<section class="hero">
+
+<section class="hero" id="hero">
     <header class="navbar">
         <div class="logo">
             <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -28,8 +29,8 @@
         </ul>
         <a href="#rencana" class="btn-nav">Hubungi Kami</a>
     </header>
-    <div class="hero-content">
 
+    <div class="hero-content">
         <h1>Jelajahi Keindahan<br>Bandung</h1>
         <p>
             Temukan pesona alam, budaya, dan petualangan seru di Bandung.
@@ -40,16 +41,33 @@
             <a href="#rencana" class="btn btn-outline">Rencanakan Trip</a>
         </div>
     </div>
+
     <div class="hero-stat-card">
-        <div class="hero-stat-icon">
-            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect x="4" y="4" width="16" height="16" rx="2" stroke="currentColor" stroke-width="2"/>
-                <path d="M4 9H20" stroke="currentColor" stroke-width="2"/>
-            </svg>
-        </div>
-        <div>
-            <p class="hero-stat-title">Destinasi Populer</p>
-            <p class="hero-stat-desc">Lebih dari 20 destinasi menarik menunggumu</p>
-        </div>
+    </div>
+
+    <div class="search-box">
+        <input type="text" placeholder="Cari destinasi, misalnya: Gunung, Air Terjun...">
+
+        <select>
+            <option>Semua Kategori</option>
+            <option>Alam</option>
+            <option>Budaya</option>
+            <option>Kuliner</option>
+        </select>
+
+        <select>
+            <option>Semua Lokasi</option>
+            <option>Purwakarta Kota</option>
+            <option>Jatiluhur</option>
+            <option>Wanayasa</option>
+        </select>
+
+        <button>Cari</button>
     </div>
 </section>
+
+<section class="destinasi-section" id="destinasi">
+</section>
+
+</body>
+</html>
