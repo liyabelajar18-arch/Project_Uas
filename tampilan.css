@@ -699,8 +699,8 @@ body{
     margin-top:20px;
 }
 .footer-social a{
-    width:60px;
-    height:60px;
+    width:45px;
+    height:45px;
     background:rgba(255,255,255,.08);
     border-radius:50%;
     display:flex;
@@ -709,8 +709,12 @@ body{
     color:white;
     text-decoration:none;
     transition:.3s;
-    font-size: 35px;
     
+}
+
+.footer-social a i{
+    font-size: 22px;
+    line-height: 1;
 }
 .footer-social a:hover{
     background:#2563eb;
