@@ -138,7 +138,7 @@ body{
 
 .btn-outline{
     background:transparent;
-    border:1px solid white;
+    border:2px solid white;
 }
 
 .btn-outline:hover{
@@ -235,6 +235,7 @@ body{
     text-decoration:none;
     border-radius:30px;
     transition:.3s;
+    border: 2px solid white;
 }
 
 .btn:hover{
