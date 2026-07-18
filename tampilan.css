@@ -86,7 +86,7 @@ body{
 }
 
 .btn-nav{
-    background:#3B82F6;
+    background:#274c77;
     color:white;
     text-decoration:none;
     font-weight:500;
@@ -97,7 +97,7 @@ body{
 }
 
 .btn-nav:hover{
-    background:#0077b6;
+    background:#274c77;
 }
 
 .navbar:hover .logo{
@@ -230,7 +230,7 @@ body{
 .btn{
     display:inline-block;
     padding:14px 35px;
-    background:#3B82F6;
+    background:#274c77;
     color:white;
     text-decoration:none;
     border-radius:30px;
@@ -263,10 +263,10 @@ body{
 }
 
 .swiper-slide{
-
-   
-    border-radius:20px;
+    background: #ffff;
+    border-radius:22px;
     overflow:hidden;
+    margin: 15px 10px;
     box-shadow:noen !important;
 
 }
