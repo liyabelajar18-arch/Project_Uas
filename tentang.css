@@ -1,0 +1,621 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#fff;
+    color:#1a1a1a;
+}
+
+a{ text-decoration:none; }
+
+.eyebrow{
+    display:inline-block;
+    color:#0F766E;
+    font-size:12.5px;
+    font-weight:700;
+    letter-spacing:1.5px;
+    margin-bottom:12px;
+}
+
+.eyebrow-light{
+    color:#5EEAD4;
+}
+
+/* ===================== NAVBAR ===================== */
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:16px 4%;
+    background:#fff;
+    box-shadow:0 2px 10px rgba(0,0,0,.05);
+    position:relative;
+    z-index:999;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    color:#1E3A5F;
+    font-weight:700;
+    font-size:18px;
+}
+
+.logo svg{
+    width:28px;
+    height:28px;
+}
+
+.nav-menu{
+    display:flex;
+    list-style:none;
+    gap:28px;
+}
+
+.nav-menu a{
+    color:#333;
+    font-weight:500;
+    font-size:14px;
+    transition:.3s;
+    padding-bottom:4px;
+}
+
+.nav-menu a:hover{
+    color:#1E3A5F;
+}
+
+.nav-menu a.active{
+    color:#0F766E;
+    border-bottom:2px solid #0F766E;
+}
+
+.navbar-right{
+    display:flex;
+    align-items:center;
+    gap:14px;
+}
+
+.icon-btn{
+    width:38px;
+    height:38px;
+    border-radius:50%;
+    border:none;
+    background:#F5F7FA;
+    color:#555;
+    font-size:15px;
+    cursor:pointer;
+    transition:.2s;
+}
+
+.icon-btn:hover{
+    background:#EAF1FB;
+    color:#1E3A5F;
+}
+
+.btn-login-nav{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    background:#1E3A5F;
+    color:#fff;
+    font-size:14px;
+    font-weight:600;
+    padding:11px 20px;
+    border-radius:30px;
+    transition:.3s;
+}
+
+.btn-login-nav:hover{
+    background:#2B6CB0;
+}
+
+/* ===================== HERO ===================== */
+.tentang-hero{
+    min-height:70vh;
+    display:flex;
+    align-items:center;
+    background:
+        linear-gradient(90deg, rgba(5,15,25,.75) 0%, rgba(5,15,25,.35) 60%, rgba(5,15,25,.15) 100%),
+        url("gambar/bandung-estetik.jpg");
+    background-size:cover;
+    background-position:center;
+    padding:0 6%;
+}
+
+.tentang-hero-content{
+    max-width:640px;
+    color:#fff;
+}
+
+.tentang-hero-content h1{
+    font-size:44px;
+    line-height:1.25;
+    font-weight:800;
+    margin-bottom:20px;
+}
+
+.tentang-hero-content h1 em{
+    color:#5EEAD4;
+    font-style:italic;
+}
+
+.tentang-hero-content p{
+    font-size:15px;
+    line-height:1.7;
+    opacity:.9;
+    margin-bottom:28px;
+    max-width:520px;
+}
+
+.btn-lebih-lanjut{
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+    background:#fff;
+    color:#1E3A5F;
+    border:none;
+    font-weight:600;
+    font-size:14px;
+    padding:13px 24px;
+    border-radius:10px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.btn-lebih-lanjut:hover{
+    background:#e8edf3;
+}
+
+/* ===================== SIAPA KAMI ===================== */
+.siapa-kami{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:60px;
+    align-items:center;
+    padding:80px 6%;
+    max-width:1300px;
+    margin:0 auto;
+}
+
+.siapa-image img{
+    width:100%;
+    height:420px;
+    object-fit:cover;
+    border-radius:18px;
+}
+
+.siapa-content h2{
+    font-size:32px;
+    margin-bottom:18px;
+    color:#12233d;
+}
+
+.siapa-content p{
+    font-size:15px;
+    color:#555;
+    line-height:1.8;
+    margin-bottom:16px;
+}
+
+.btn-pelajari{
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+    background:#12233d;
+    color:#fff;
+    font-weight:600;
+    font-size:14px;
+    padding:14px 26px;
+    border-radius:10px;
+    margin-top:10px;
+    transition:.3s;
+}
+
+.btn-pelajari:hover{
+    background:#1E3A5F;
+}
+
+/* ===================== VISI MISI NILAI ===================== */
+.nilai-kami{
+    background:#F0F7F6;
+    padding:70px 6%;
+}
+
+.section-title-center{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.section-title-center h2{
+    font-size:30px;
+    color:#12233d;
+}
+
+.nilai-grid{
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap:40px;
+    max-width:1200px;
+    margin:0 auto;
+    text-align:center;
+}
+
+.nilai-icon{
+    width:64px;
+    height:64px;
+    border-radius:50%;
+    background:#D9F0EC;
+    color:#0F766E;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:24px;
+    margin:0 auto 18px;
+}
+
+.nilai-item h3{
+    font-size:19px;
+    margin-bottom:12px;
+    color:#12233d;
+}
+
+.nilai-item p{
+    font-size:14px;
+    color:#666;
+    line-height:1.7;
+}
+
+/* ===================== BANDUNG DALAM ANGKA ===================== */
+.angka-section{
+    text-align:center;
+    padding:70px 6%;
+    background:
+        linear-gradient(rgba(6,16,30,.82),rgba(6,16,30,.82)),
+        url("gambar/bandung-malam.jpg");
+    background-size:cover;
+    background-position:center;
+    color:#fff;
+}
+
+.angka-grid{
+    display:grid;
+    grid-template-columns:repeat(5, 1fr);
+    gap:20px;
+    max-width:1100px;
+    margin:30px auto 0;
+}
+
+.angka-item i{
+    font-size:22px;
+    color:#5EEAD4;
+    margin-bottom:14px;
+}
+
+.angka-item h3{
+    font-size:32px;
+    font-weight:800;
+    margin-bottom:6px;
+}
+
+.angka-item p{
+    font-size:13px;
+    opacity:.8;
+}
+
+.tim-kami{
+    padding:80px 6%;
+}
+
+.tim-grid{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:26px;
+    max-width:1200px;
+    margin:0 auto;
+}
+
+.tim-card{
+    width: 270px;
+    border-radius:16px;
+    overflow:hidden;
+    box-shadow:0 6px 20px rgba(0,0,0,.06);
+    text-align:center;
+    transition:.3s;
+}
+
+.tim-card:hover{
+    transform:translateY(-6px);
+    box-shadow:0 14px 30px rgba(0,0,0,.1);
+}
+
+.tim-card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+    background:#ddd;
+}
+
+.tim-info{
+    padding:20px;
+}
+
+.tim-info h4{
+    font-size:16px;
+    margin-bottom:4px;
+}
+
+.tim-info p{
+    font-size:13px;
+    color:#888;
+    margin-bottom:14px;
+}
+
+.tim-social{
+    display:flex;
+    justify-content:center;
+    gap:12px;
+}
+
+.tim-social a{
+    width:32px;
+    height:32px;
+    border-radius:50%;
+    background:#F5F7FA;
+    color:#1E3A5F;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:13px;
+    transition:.2s;
+}
+
+.tim-social a:hover{
+    background:#1E3A5F;
+    color:#fff;
+}
+
+/* ===================== CTA ===================== */
+.cta-section{
+    padding:0 6% 70px;
+}
+
+.cta-box{
+    position:relative;
+    max-width:1200px;
+    margin:0 auto;
+    border-radius:20px;
+    overflow:hidden;
+    background:
+        linear-gradient(90deg, rgba(6,16,30,.85) 20%, rgba(6,16,30,.55) 100%),
+        url("gambar/hutan-kabut.jpg");
+    background-size:cover;
+    background-position:center;
+    padding:50px 50px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:30px;
+    flex-wrap:wrap;
+    color:#fff;
+}
+
+.cta-text h2{
+    font-size:26px;
+    margin-bottom:10px;
+}
+
+.cta-text p{
+    font-size:14px;
+    opacity:.85;
+    max-width:420px;
+}
+
+.btn-cta{
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+    background:#0F766E;
+    color:#fff;
+    font-weight:600;
+    font-size:14px;
+    padding:15px 26px;
+    border-radius:12px;
+    white-space:nowrap;
+    transition:.3s;
+}
+
+.btn-cta:hover{
+    background:#0d5f58;
+}
+
+.footer{
+    background:#0f172a;
+    color:#fff;
+    padding:60px 6% 25px;
+}
+
+.footer-container{
+    display:grid;
+    grid-template-columns:1.6fr 1fr 1fr 1.3fr 1.3fr;
+    gap:40px;
+}
+
+.footer-box h2{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    font-size:20px;
+    margin-bottom:16px;
+}
+
+.footer-box h2 svg{
+    width:24px;
+    height:24px;
+    color:#5EEAD4;
+}
+
+.footer-box h3{
+    font-size:16px;
+    margin-bottom:16px;
+}
+
+.footer-box p{
+    color:#cbd5e1;
+    font-size:13.5px;
+    line-height:1.7;
+    margin-bottom:10px;
+    display:flex;
+    align-items:flex-start;
+    gap:8px;
+}
+
+.footer-box i{
+    color:#5EEAD4;
+    margin-top:2px;
+}
+
+.footer-box ul{
+    list-style:none;
+}
+
+.footer-box ul li{
+    margin-bottom:10px;
+}
+
+.footer-box ul li a{
+    color:#cbd5e1;
+    font-size:13.5px;
+    transition:.2s;
+}
+
+.footer-box ul li a:hover{
+    color:#5EEAD4;
+}
+
+.footer-social{
+    display:flex;
+    gap:10px;
+    margin-top:16px;
+}
+
+.footer-social a{
+    width:36px;
+    height:36px;
+    border-radius:50%;
+    background:rgba(255,255,255,.08);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:#fff;
+    font-size:14px;
+    transition:.2s;
+}
+
+.footer-social a:hover{
+    background:#0F766E;
+}
+
+.newsletter-form{
+    display:flex;
+    gap:8px;
+    margin-top:6px;
+}
+
+.newsletter-form input{
+    flex:1;
+    padding:11px 12px;
+    border:none;
+    border-radius:8px;
+    font-size:13px;
+    outline:none;
+}
+
+.newsletter-form button{
+    background:#0F766E;
+    border:none;
+    color:#fff;
+    width:42px;
+    border-radius:8px;
+    cursor:pointer;
+    transition:.2s;
+}
+
+.newsletter-form button:hover{
+    background:#0d5f58;
+}
+
+.footer hr{
+    border:none;
+    height:1px;
+    background:rgba(255,255,255,.1);
+    margin:40px 0 20px;
+}
+
+.footer-bottom{
+    text-align:center;
+}
+
+.footer-bottom p{
+    color:#94a3b8;
+    font-size:13px;
+}
+
+/* ===================== RESPONSIVE ===================== */
+@media (max-width:1100px){
+    .footer-container{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .angka-grid{
+        grid-template-columns:repeat(3, 1fr);
+    }
+
+    .tim-grid{
+        grid-template-columns:repeat(2, 1fr);
+    }
+}
+
+@media (max-width:900px){
+    .nav-menu{ display:none; }
+
+    .siapa-kami{
+        grid-template-columns:1fr;
+    }
+
+    .nilai-grid{
+        grid-template-columns:1fr;
+    }
+
+    .faq-grid{
+        grid-template-columns:1fr;
+    }
+
+    .cta-box{
+        flex-direction:column;
+        text-align:center;
+    }
+}
+
+@media (max-width:600px){
+    .tentang-hero-content h1{
+        font-size:32px;
+    }
+
+    .angka-grid{
+        grid-template-columns:repeat(2, 1fr);
+    }
+
+    .tim-grid{
+        grid-template-columns:1fr;
+    }
+
+    .footer-container{
+        grid-template-columns:1fr;
+    }
+}

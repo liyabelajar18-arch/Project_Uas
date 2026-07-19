@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rencanakan Perjalanan - Bandung Explore</title>
+    <link rel="stylesheet" href="Rencana.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+<header class="navbar">
+    <div class="logo">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M3 20L9 8L13 15L16 10L21 20H3Z" fill="currentColor"/>
+        </svg>
+        <div class="logo-text">
+            <span class="logo-title">Bandung Explore</span>
+            <span class="logo-subtitle">Jelajahi Bandung</span>
+        </div>
+    </div>
+    <ul class="nav-menu">
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="Destinasi.html">Destinasi</a></li>
+        <li><a href="#pengalaman">Pengalaman</a></li>
+        <li><a href="Rencana.html" class="active">Rencanakan Perjalanan</a></li>
+        <li><a href="tentang.html">Tentang Kami</a></li>
+    </ul>
+    <a href="#kontak" class="btn-nav"><i class="fa-solid fa-phone"></i> Hubungi Kami</a>
+</header>
+<section class="rencana-hero">
+    <div class="rencana-hero-text">
+        <span class="eyebrow"><i class="fa-solid fa-paper-plane"></i> Rencanakan Perjalananmu</span>
+        <h1>Rencanakan Perjalanan <span>Terbaik</span> di Bandung</h1>
+        <p>Atur itinerary, pilih destinasi favorit, dan nikmati perjalanan yang tak terlupakan di Kota Kembang.</p>
+    </div>
+    <div class="rencana-hero-illustration">
+        <img src="gambar/ilustrasi-traveler.png" alt="Ilustrasi Traveler">
+    </div>
+    <form class="rencana-form">
+        <div class="form-field">
+            <label>Dari Mana?</label>
+            <div class="input-icon">
+                <i class="fa-solid fa-location-dot"></i>
+                <input type="text" placeholder="Lokasi asal kamu">
+            </div>
+        </div>
+        <div class="form-field">
+            <label>Tanggal Perjalanan</label>
+            <div class="input-icon">
+                <i class="fa-regular fa-calendar"></i>
+                <input type="text" placeholder="Pilih tanggal">
+            </div>
+        </div>
+        <div class="form-field">
+            <label>Durasi</label>
+            <div class="input-icon">
+                <i class="fa-regular fa-clock"></i>
+                <input type="text" placeholder="Pilih durasi">
+            </div>
+        </div>
+        <div class="form-field">
+            <label>Gaya Perjalanan</label>
+            <div class="input-icon">
+                <i class="fa-solid fa-users"></i>
+                <select>
+                    <option>Semua gaya</option>
+                    <option>Santai</option>
+                    <option>Petualangan</option>
+                    <option>Keluarga</option>
+                </select>
+            </div>
+        </div>
+        <button type="submit" class="btn-buat-rencana">
+            <i class="fa-solid fa-wand-magic-sparkles"></i> Buat Rencana
+        </button>
+    </form>
+</section>
+<section class="rencana-dashboard">
+    <aside class="sidebar-left">
+        <div class="panel">
+            <div class="panel-header">
+                <h3>Rencana Saya</h3>
+                <a href="#" class="link-add"><i class="fa-solid fa-plus"></i> Rencana Baru</a>
+            </div>
+            <div class="plan-list">
+                <div class="plan-item active">
+                    <img src="gambar/plan-akhir-pekan.jpeg" alt="">
+                    <div>
+                        <h4>Liburan Akhir Pekan</h4>
+                        <p>2 Hari 1 Malam</p>
+                    </div>
+                </div>
+                <div class="plan-item">
+                    <img src="gambar/plan-keluarga.jpeg" alt="">
+                    <div>
+                        <h4>Trip Keluarga</h4>
+                        <p>3 Hari 2 Malam</p>
+                    </div>
+                </div>
+                <div class="plan-item">
+                    <img src="gambar/plan-healing.jpeg" alt="">
+                    <div>
+                        <h4>Healing di Bandung</h4>
+                        <p>2 Hari 1 Malam</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel login-panel">
+            <h3>Simpan &amp; Akses Rencanamu</h3>
+            <p>Login untuk menyimpan rencana perjalananmu dan akses kapan saja.</p>
+            <img src="gambar/mockup-app.png" alt="" class="login-mockup">
+            <a href="profil/login.html" class="btn-login">Login / Daftar</a>
+        </div>
+
+        <div class="panel">
+            <div class="panel-header">
+                <h3>Inspirasi Rencana</h3>
+                <a href="#" class="link-see-all">Lihat Semua</a>
+            </div>
+            <div class="inspirasi-list">
+                <a href="#" class="inspirasi-item">
+                    <img src="gambar/inspirasi-alam.jpeg" alt="">
+                    <div>
+                        <h4>Petualangan Alam</h4>
+                        <p>3 Hari 2 Malam</p>
+                        <span class="saved-count"><i class="fa-solid fa-users"></i> 1.2K disimpan</span>
+                    </div>
+                </a>
+                <a href="#" class="inspirasi-item">
+                    <img src="gambar/inspirasi-kuliner.jpeg" alt="">
+                    <div>
+                        <h4>Wisata Kuliner</h4>
+                        <p>2 Hari 1 Malam</p>
+                        <span class="saved-count"><i class="fa-solid fa-users"></i> 980 disimpan</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </aside>
+    <main class="itinerary-main">
+        <div class="itinerary-header">
+            <div>
+                <h2>Liburan Akhir Pekan di Bandung <i class="fa-solid fa-pen edit-icon"></i></h2>
+                <p>2 Hari 1 Malam &bull; 6 Destinasi</p>
+            </div>
+            <div class="itinerary-actions">
+                <button class="btn-ghost"><i class="fa-solid fa-share-nodes"></i> Bagikan</button>
+                <button class="btn-ghost"><i class="fa-regular fa-heart"></i> Simpan</button>
+            </div>
+        </div>
+
+        <div class="tabs">
+            <button class="tab active">Itinerary</button>
+            <button class="tab">Ringkasan Perjalanan</button>
+        </div>
+
+        <div class="day-tabs">
+            <button class="day-tab active">
+                <span>Hari 1</span>
+                <small>Sab, 20 Juli</small>
+            </button>
+            <button class="day-tab">
+                <span>Hari 2</span>
+                <small>Min, 21 Juli</small>
+            </button>
+            <button class="day-tab-add"><i class="fa-solid fa-plus"></i> Tambah Hari</button>
+        </div>
+
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-time">08:00</div>
+                <div class="timeline-dot"></div>
+                <div class="timeline-card">
+                    <img src="gambar/braga-city-walk.jpeg" alt="Braga City Walk">
+                    <div class="timeline-body">
+                        <div class="timeline-top">
+                            <h4>Sarapan di Braga City Walk</h4>
+                            <span class="tag tag-kuliner">Kuliner</span>
+                        </div>
+                        <p>Nikmati suasana pagi di Braga sambil menikmati sarapan di kafe unik.</p>
+                        <span class="loc"><i class="fa-solid fa-location-dot"></i> Braga</span>
+                    </div>
+                    <button class="item-menu"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-time">10:00</div>
+                <div class="timeline-dot"></div>
+                <div class="timeline-card">
+                    <img src="gambar/gedung-sate.jpeg" alt="Gedung Sate">
+                    <div class="timeline-body">
+                        <div class="timeline-top">
+                            <h4>Gedung Sate</h4>
+                            <span class="tag tag-budaya">Budaya</span>
+                        </div>
+                        <p>Icon Kota Bandung dengan arsitektur bersejarah yang megah.</p>
+                        <span class="loc"><i class="fa-solid fa-location-dot"></i> Bandung Kota</span>
+                    </div>
+                    <button class="item-menu"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-time">12:30</div>
+                <div class="timeline-dot"></div>
+                <div class="timeline-card">
+                    <img src="gambar/sudirman-street.jpeg" alt="Sudirman Street">
+                    <div class="timeline-body">
+                        <div class="timeline-top">
+                            <h4>Makan Siang di Sudirman Street</h4>
+                            <span class="tag tag-kuliner">Kuliner</span>
+                        </div>
+                        <p>Kuliner lezat dengan berbagai pilihan makanan khas Bandung.</p>
+                        <span class="loc"><i class="fa-solid fa-location-dot"></i> Sudirman Street</span>
+                    </div>
+                    <button class="item-menu"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-time">14:30</div>
+                <div class="timeline-dot"></div>
+                <div class="timeline-card">
+                    <img src="gambar/Kawah putih.jpeg" alt="Kawah Putih">
+                    <div class="timeline-body">
+                        <div class="timeline-top">
+                            <h4>Kawah Putih</h4>
+                            <span class="tag tag-alam">Alam</span>
+                        </div>
+                        <p>Danau kawah dengan pemandangan indah dan udara yang sejuk.</p>
+                        <span class="loc"><i class="fa-solid fa-location-dot"></i> Ciwidey</span>
+                    </div>
+                    <button class="item-menu"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-time">18:30</div>
+                <div class="timeline-dot"></div>
+                <div class="timeline-card">
+                    <img src="gambar/makan-malam-lembang.jpeg" alt="Makan Malam Lembang">
+                    <div class="timeline-body">
+                        <div class="timeline-top">
+                            <h4>Makan Malam di Lembang</h4>
+                            <span class="tag tag-kuliner">Kuliner</span>
+                        </div>
+                        <p>Nikmati makan malam dengan suasana sejuk di kawasan Lembang.</p>
+                        <span class="loc"><i class="fa-solid fa-location-dot"></i> Lembang</span>
+                    </div>
+                    <button class="item-menu"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-time">20:00</div>
+                <div class="timeline-dot"></div>
+                <div class="timeline-card">
+                    <img src="gambar/hotel-lembang.jpeg" alt="Hotel Lembang">
+                    <div class="timeline-body">
+                        <div class="timeline-top">
+                            <h4>Istirahat di Hotel</h4>
+                            <span class="tag tag-akomodasi">Akomodasi</span>
+                        </div>
+                        <p>Check-in dan beristirahat untuk persiapan hari berikutnya.</p>
+                        <span class="loc"><i class="fa-solid fa-location-dot"></i> Lembang</span>
+                    </div>
+                    <button class="item-menu"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                </div>
+            </div>
+        </div>
+        <button class="btn-tambah-aktivitas"><i class="fa-solid fa-plus"></i> Tambah Aktivitas</button>
+    </main>
+    <aside class="sidebar-right">
+        <div class="panel">
+            <h3>Peta Rute Perjalanan</h3>
+            <div class="map-box">
+                <img src="gambar/peta-rute.png" alt="Peta Rute Perjalanan">
+            </div>
+        </div>
+        <div class="panel">
+            <h3>Ringkasan Perjalanan</h3>
+            <ul class="summary-list">
+                <li>
+                    <span class="summary-icon"><i class="fa-regular fa-clock"></i></span>
+                    <span class="summary-label">Total Durasi</span>
+                    <span class="summary-value">2 Hari 1 Malam</span>
+                </li>
+                <li>
+                    <span class="summary-icon"><i class="fa-solid fa-location-dot"></i></span>
+                    <span class="summary-label">Total Destinasi</span>
+                    <span class="summary-value">6 Destinasi</span>
+                </li>
+                <li>
+                    <span class="summary-icon"><i class="fa-solid fa-wallet"></i></span>
+                    <span class="summary-label">Estimasi Budget</span>
+                    <span class="summary-value">Rp 1.250.000<small>Per orang</small></span>
+                </li>
+                <li>
+                    <span class="summary-icon"><i class="fa-solid fa-car"></i></span>
+                    <span class="summary-label">Transportasi</span>
+                    <span class="summary-value">Mobil Pribadi<small>&plusmn; 120 km</small></span>
+                </li>
+            </ul>
+            <a href="#" class="btn-rincian">Lihat Rincian Biaya</a>
+        </div>
+        <div class="panel tips-panel">
+            <div class="panel-header">
+                <h3>Tips Perjalanan</h3>
+                <i class="fa-solid fa-mountain-sun tips-icon"></i>
+            </div>
+            <ul class="tips-list">
+                <li><i class="fa-solid fa-circle-check"></i> Gunakan pakaian hangat, suhu di Lembang bisa sangat dingin.</li>
+                <li><i class="fa-solid fa-circle-check"></i> Bawa kamera untuk mengabadikan momen terbaikmu.</li>
+                <li><i class="fa-solid fa-circle-check"></i> Pesan akomodasi lebih awal untuk mendapatkan harga terbaik.</li>
+            </ul>
+        </div>
+    </aside>
+</section>
+<section class="destinasi-populer">
+    <div class="section-header-row">
+        <h2>Destinasi Populer di Bandung</h2>
+        <a href="Destinasi.html" class="link-see-all">Lihat Semua</a>
+    </div>
+    <div class="destinasi-scroll">
+        <div class="mini-card">
+            <img src="gambar/Kawah putih.jpeg" alt="Kawah Putih">
+            <span class="mini-heart"><i class="fa-regular fa-heart"></i></span>
+            <div class="mini-body">
+                <div class="mini-top">
+                    <h4>Kawah Putih</h4>
+                    <span class="mini-rating"><i class="fa-solid fa-star"></i> 4.8</span>
+                </div>
+                <span class="mini-tag mini-tag-alam">Alam</span>
+            </div>
+        </div>
+        <div class="mini-card">
+            <img src="gambar/braga.jpeg" alt="Braga">
+            <span class="mini-heart"><i class="fa-regular fa-heart"></i></span>
+            <div class="mini-body">
+                <div class="mini-top">
+                    <h4>Braga</h4>
+                    <span class="mini-rating"><i class="fa-solid fa-star"></i> 4.7</span>
+                </div>
+                <span class="mini-tag mini-tag-budaya">Budaya</span>
+            </div>
+        </div>
+        <div class="mini-card">
+            <img src="gambar/lembang.jpeg" alt="Lembang">
+            <span class="mini-heart"><i class="fa-regular fa-heart"></i></span>
+            <div class="mini-body">
+                <div class="mini-top">
+                    <h4>Lembang</h4>
+                    <span class="mini-rating"><i class="fa-solid fa-star"></i> 4.6</span>
+                </div>
+                <span class="mini-tag mini-tag-alam">Alam</span>
+            </div>
+        </div>
+        <div class="mini-card">
+            <img src="gambar/orchid-forest.jpeg" alt="Orchid Forest">
+            <span class="mini-heart"><i class="fa-regular fa-heart"></i></span>
+            <div class="mini-body">
+                <div class="mini-top">
+                    <h4>Orchid Forest</h4>
+                    <span class="mini-rating"><i class="fa-solid fa-star"></i> 4.8</span>
+                </div>
+                <span class="mini-tag mini-tag-alam">Alam</span>
+            </div>
+        </div>
+        <div class="mini-card">
+            <img src="gambar/dusun-bambu.jpeg" alt="Dusun Bambu">
+            <span class="mini-heart"><i class="fa-regular fa-heart"></i></span>
+            <div class="mini-body">
+                <div class="mini-top">
+                    <h4>Dusun Bambu</h4>
+                    <span class="mini-rating"><i class="fa-solid fa-star"></i> 4.7</span>
+                </div>
+                <span class="mini-tag mini-tag-alam">Alam</span>
+            </div>
+        </div>
+        <div class="mini-card">
+            <img src="gambar/trans-studio.jpeg" alt="Trans Studio">
+            <span class="mini-heart"><i class="fa-regular fa-heart"></i></span>
+            <div class="mini-body">
+                <div class="mini-top">
+                    <h4>Trans Studio</h4>
+                    <span class="mini-rating"><i class="fa-solid fa-star"></i> 4.6</span>
+                </div>
+                <span class="mini-tag mini-tag-hiburan">Hiburan</span>
+            </div>
+        </div>
+        <button class="scroll-next"><i class="fa-solid fa-chevron-right"></i></button>
+    </div>
+</section>
+<footer class="footer" id="informasi">
+    <div class="footer-container">
+        <div class="footer-box">
+            <h2>
+                <i class="fa-solid fa-mountain-sun"></i>
+                Bandung Explore
+            </h2>
+            <p>
+                Jelajahi keindahan Bandung bersama kami.
+                Temukan destinasi wisata terbaik dan pengalaman
+                yang tak terlupakan.
+            </p>
+            <div class="footer-social">
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+        </div>
+        <div class="footer-box">
+            <h3>Menu</h3>
+            <ul>
+                <li><a href="#hero">Beranda</a></li>
+                <li><a href="#destinasi">Destinasi</a></li>
+                <li><a href="#pengalaman">Pengalaman</a></li>
+                <li><a href="#rencana">Rencanakan Perjalanan</a></li>
+                <li><a href="#informasi">Tentang Kami</a></li>
+            </ul>
+        </div>
+        <div class="footer-box">
+            <h3>Destinasi Populer</h3>
+            <ul>
+                <li>Masjid Aljabar</li>
+                <li>Kawah Putih</li>
+                <li>Curug Cipurut</li>
+                <li>jalan Braga</li>
+                <li>Parang Gombong</li>
+            </ul>
+        </div>
+        <div class="footer-box">
+            <h3>Kontak Kami</h3>
+            <p>
+                <i class="fa-solid fa-phone"></i>
+                +62 812-xxxxx
+            </p>
+            <p>
+                <i class="fa-solid fa-envelope"></i>
+                info@Bandungexplore.id
+            </p>
+            <p>
+                <i class="fa-solid fa-location-dot"></i>
+                Jl. Veteran No.1, Bandung
+            </p>
+        </div>
+    </div>
+    <hr>
+    <div class="footer-bottom">
+        <p>
+            © 2026 Bandung Explore. All Rights Reserved.
+        </p>
+        <div>
+            <a href="#">Kebijakan Privasi</a>
+            <a href="#">Syarat & Ketentuan</a>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

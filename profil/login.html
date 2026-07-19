@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Bandung Explore</title>
+    <link rel="stylesheet" href="Login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+<div class="login-page">
+    <div class="login-visual">
+        <div class="login-logo">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3 20L9 8L13 15L16 10L21 20H3Z" fill="currentColor"/>
+            </svg>
+            <span>Bandung Explore</span>
+        </div>
+        <div class="login-visual-text">
+            <h1>Explore<br>The Beauty<br>of Bandung</h1>
+            <p>Temukan tempat terbaik, pengalaman seru, dan rencanakan perjalananmu bersama kami.</p>
+        </div>
+        <div class="login-location">
+            <i class="fa-solid fa-location-dot"></i> Kawah Putih, Bandung
+        </div>
+    </div>
+    <div class="login-form-side">
+        <a href="../index.html" class="btn-back">
+            <i class="fa-solid fa-arrow-left"></i> Kembali ke Beranda
+        </a>
+        <div class="login-form-wrap">
+            <div class="login-card">
+                <h2>Selamat Datang Kembali!</h2>
+                <p class="login-subtitle">Masuk untuk melanjutkan petualanganmu menjelajahi Bandung.</p>
+    <form>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <div class="input-icon">
+                <i class="fa-regular fa-envelope"></i>
+                <input type="email" id="email" placeholder="Masukkan email Anda">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="password">Password</label>
+            <div class="input-icon">
+                <i class="fa-solid fa-lock"></i>
+                <input type="password" id="password" placeholder="Masukkan password Anda">
+                <i class="fa-regular fa-eye toggle-password"></i>
+            </div>
+        </div>
+        <div class="form-row">
+            <label class="checkbox-label">
+                <input type="checkbox">
+                Ingat Saya
+            </label>
+            <a href="#" class="link-forgot">Lupa Password?</a>
+        </div>
+        <button type="submit" class="btn-login-submit">
+            Login
+            <a href="../index.html"></a>
+        </button>
+        <div class="divider"><span>atau</span></div>
+        <button type="button" class="btn-google">
+            <img src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg" alt="Google">
+            Login dengan Google
+        </button>
+        <p class="signup-text">Belum punya akun? <a href="register.html">Daftar sekarang</a></p>
+    </form>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
