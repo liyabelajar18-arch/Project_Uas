@@ -8,5 +8,23 @@ window.addEventListener("scroll", function () {
         navbar.classList.remove("scrolled");
     }
 
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const loginBtn = document.getElementById("loginBtn");
+    const profileBtn = document.getElementById("profileBtn");
+
+    if (localStorage.getItem("isLoggedIn") === "true") {
+
+        if (loginBtn) {
+            loginBtn.style.display = "none";
+        }
+
+        if (profileBtn) {
+            profileBtn.style.display = "flex";
+        }
+
+    }
 
 });
