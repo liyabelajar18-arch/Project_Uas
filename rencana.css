@@ -494,10 +494,22 @@ a{ text-decoration:none; }
     border-radius:20px;
     white-space:nowrap;
 }
-.tag-kuliner{ background:#FEF3D6; color:#B7791F; }
-.tag-budaya{ background:#EDE7FB; color:#6B46C1; }
-.tag-alam{ background:#E1F3E8; color:#2F855A; }
-.tag-akomodasi{ background:#DCEBFB; color:#2B6CB0; }
+.tag-kuliner{ 
+    background:#FEF3D6; 
+    color:#B7791F; 
+    }
+.tag-budaya{ 
+    background:#EDE7FB; 
+    color:#6B46C1;
+     }
+.tag-alam{ 
+    background:#E1F3E8;
+     color:#2F855A;
+     }
+.tag-akomodasi{ 
+    background:#DCEBFB;
+     color:#2B6CB0; 
+    }
 .timeline-body p{
     font-size:13px;
     color:#666;
