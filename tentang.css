@@ -414,6 +414,21 @@ a{ text-decoration:none; }
 .btn-cta:hover{
     background:#274c77;
 }
+.peta-section {
+    padding:60px 8%;
+}
+.peta-wrapper {
+    width: 100%;
+    border-radius: 16px;
+    overflow:hidden;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+.peta-wrapper iframe {
+    display: block;
+    width: 100%;
+    height: 500px;
+    border: 0;
+}
 
 .footer{
     background:#0f172a;
