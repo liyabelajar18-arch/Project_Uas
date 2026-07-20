@@ -16,7 +16,7 @@
         </svg>
         <span>Bandung Explore</span>
     </div>
-    <ul class="nav-menu">
+    <ul class="nav-menu" id="navMenu">
         <li><a href="index.html">Beranda</a></li>
         <li><a href="Destinasi.html">Destinasi</a></li>
         <li><a href="Rencana.html">Rencanakan Perjalanan</a></li>
@@ -27,6 +27,13 @@
         <button class="icon-btn"><i class="fa-regular fa-bell"></i></button>
         <a href="profil/login.html" class="btn-login-nav"><i class="fa-solid fa-user"></i> Login</a>
     </div>
+    <div class="humberger" id="humberger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</header>
+<div class="overlay" id="overlay"></div>
 </header>
 <section class="tentang-hero">
     <div class="tentang-hero-content">
@@ -222,7 +229,7 @@
         <p>&copy; 2026 Bandung Explore. All rights reserved.</p>
     </div>
 </footer>
-
+<script src="js/humberger.js"></script>
 <script>
 document.querySelectorAll('.faq-question').forEach(function(btn){
     btn.addEventListener('click', function(){
