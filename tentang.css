@@ -38,7 +38,7 @@ a{ text-decoration:none; }
     display:flex;
     align-items:center;
     gap:10px;
-    color:#3b82f6;
+    color:#1E3A5F;
     font-weight:700;
     font-size:18px;
 }
@@ -62,8 +62,8 @@ a{ text-decoration:none; }
     color:#1E3A5F;
 }
 .nav-menu a.active{
-    color:#0F766E;
-    border-bottom:2px solid #0F766E;
+    color:#1E3A5F;
+    border-bottom:2px solid #1E3A5F;
 }
 .navbar-right{
     display:flex;
