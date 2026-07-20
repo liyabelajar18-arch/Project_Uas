@@ -14,7 +14,7 @@ a{ text-decoration:none; }
 
 .eyebrow{
     display:inline-block;
-    color:#0F766E;
+    color:#2B6CB0;
     font-size:12.5px;
     font-weight:700;
     letter-spacing:1.5px;
@@ -22,10 +22,8 @@ a{ text-decoration:none; }
 }
 
 .eyebrow-light{
-    color:#5EEAD4;
+    color:#0e4da0;
 }
-
-/* ===================== NAVBAR ===================== */
 .navbar{
     display:flex;
     justify-content:space-between;
@@ -36,7 +34,6 @@ a{ text-decoration:none; }
     position:relative;
     z-index:999;
 }
-
 .logo{
     display:flex;
     align-items:center;
@@ -45,18 +42,15 @@ a{ text-decoration:none; }
     font-weight:700;
     font-size:18px;
 }
-
 .logo svg{
     width:28px;
     height:28px;
 }
-
 .nav-menu{
     display:flex;
     list-style:none;
     gap:28px;
 }
-
 .nav-menu a{
     color:#333;
     font-weight:500;
@@ -64,16 +58,13 @@ a{ text-decoration:none; }
     transition:.3s;
     padding-bottom:4px;
 }
-
 .nav-menu a:hover{
     color:#1E3A5F;
 }
-
 .nav-menu a.active{
     color:#0F766E;
     border-bottom:2px solid #0F766E;
 }
-
 .navbar-right{
     display:flex;
     align-items:center;
@@ -113,15 +104,13 @@ a{ text-decoration:none; }
 .btn-login-nav:hover{
     background:#2B6CB0;
 }
-
-/* ===================== HERO ===================== */
 .tentang-hero{
     min-height:70vh;
     display:flex;
     align-items:center;
     background:
         linear-gradient(90deg, rgba(5,15,25,.75) 0%, rgba(5,15,25,.35) 60%, rgba(5,15,25,.15) 100%),
-        url("gambar/bandung-estetik.jpg");
+        url("gambar/pantai.jpeg");
     background-size:cover;
     background-position:center;
     padding:0 6%;
@@ -140,7 +129,7 @@ a{ text-decoration:none; }
 }
 
 .tentang-hero-content h1 em{
-    color:#5EEAD4;
+    color:#2B6CB0;
     font-style:italic;
 }
 
@@ -170,8 +159,6 @@ a{ text-decoration:none; }
 .btn-lebih-lanjut:hover{
     background:#e8edf3;
 }
-
-/* ===================== SIAPA KAMI ===================== */
 .siapa-kami{
     display:grid;
     grid-template-columns:1fr 1fr;
@@ -188,7 +175,6 @@ a{ text-decoration:none; }
     object-fit:cover;
     border-radius:18px;
 }
-
 .siapa-content h2{
     font-size:32px;
     margin-bottom:18px;
@@ -197,9 +183,10 @@ a{ text-decoration:none; }
 
 .siapa-content p{
     font-size:15px;
+    text-align: justify;
     color:#555;
     line-height:1.8;
-    margin-bottom:16px;
+    margin-bottom:20px;
 }
 
 .btn-pelajari{
@@ -219,8 +206,6 @@ a{ text-decoration:none; }
 .btn-pelajari:hover{
     background:#1E3A5F;
 }
-
-/* ===================== VISI MISI NILAI ===================== */
 .nilai-kami{
     background:#F0F7F6;
     padding:70px 6%;
@@ -269,8 +254,6 @@ a{ text-decoration:none; }
     color:#666;
     line-height:1.7;
 }
-
-/* ===================== BANDUNG DALAM ANGKA ===================== */
 .angka-section{
     text-align:center;
     padding:70px 6%;
@@ -379,8 +362,6 @@ a{ text-decoration:none; }
     background:#1E3A5F;
     color:#fff;
 }
-
-/* ===================== CTA ===================== */
 .cta-section{
     padding:0 6% 70px;
 }
@@ -556,7 +537,6 @@ a{ text-decoration:none; }
     background:rgba(255,255,255,.1);
     margin:40px 0 20px;
 }
-
 .footer-bottom{
     text-align:center;
 }
@@ -565,22 +545,17 @@ a{ text-decoration:none; }
     color:#94a3b8;
     font-size:13px;
 }
-
-/* ===================== RESPONSIVE ===================== */
 @media (max-width:1100px){
     .footer-container{
-        grid-template-columns:1fr 1fr;
-    }
-
+    grid-template-columns:1fr 1fr;
+}
     .angka-grid{
-        grid-template-columns:repeat(3, 1fr);
+    grid-template-columns:repeat(3, 1fr);
     }
-
     .tim-grid{
-        grid-template-columns:repeat(2, 1fr);
+    grid-template-columns:repeat(2, 1fr);
     }
 }
-
 @media (max-width:900px){
     .nav-menu{ display:none; }
 
