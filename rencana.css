@@ -240,6 +240,7 @@ a{ text-decoration:none; }
     box-shadow:0 4px 16px rgba(0,0,0,.05);
     margin-bottom:20px;
 }
+
 .panel-header{
     display:flex;
     justify-content:space-between;
@@ -249,6 +250,7 @@ a{ text-decoration:none; }
 .panel-header h3{
     font-size:16px;
 }
+
 .link-add,
 .link-see-all{
     font-size:13px;
@@ -674,7 +676,7 @@ a{ text-decoration:none; }
     background:#2B6CB0;
 }
 .tips-icon{
-    color:#2F855A;
+    color:#1E3A5F;
     font-size:20px;
 }
 .tips-list{
@@ -692,7 +694,7 @@ a{ text-decoration:none; }
     line-height:1.5;
 }
 .tips-list i{
-    color:#2F855A;
+    color:#1E3A5F;
     margin-top:2px;
     flex-shrink:0;
 }
