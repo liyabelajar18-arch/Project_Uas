@@ -124,7 +124,6 @@ body {
     text-decoration:none;
     font-size:18px;
     transition:.3s;
-    margin-left:20px;
 }
 
 .profile-btn:hover{
@@ -142,6 +141,11 @@ body {
 
 .navbar:hover .nav-menu a {
     color: #333;
+}
+.navbar-right{
+    display:flex;
+    align-items:center;
+    gap:15px;
 }
 
 /* ===================== HAMBURGER (ADDED) ===================== */

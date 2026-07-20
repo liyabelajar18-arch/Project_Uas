@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         alert("Login berhasil!");
 
-        window.location.href = "../rencana.html";
+        window.location.href = "../index.html";
 
     });
 
