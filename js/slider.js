@@ -38,4 +38,3 @@ autoplay:{
     }
 
 });
-</script>
