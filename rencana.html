@@ -46,16 +46,16 @@
         </div>
         <div class="form-field">
             <label>Tanggal Perjalanan</label>
-            <div class="input-icon">
+            <div class="input-icon" id="tanggal-wrap">
                 <i class="fa-regular fa-calendar"></i>
-                <input type="text" placeholder="Pilih tanggal">
+                <input type="date" id="tanggal-perjalanan">
             </div>
         </div>
         <div class="form-field">
-            <label>Durasi</label>
-            <div class="input-icon">
-                <i class="fa-regular fa-clock"></i>
-                <input type="text" placeholder="Pilih durasi">
+            <label>Sampai Tanggal</label>
+            <div class="input-icon" id="sampai-wrap">
+                <i class="fa-regular fa-calendar-check"></i>
+                <input type="date" id="tanggal-selesai">
             </div>
         </div>
         <div class="form-field">
@@ -457,5 +457,7 @@
         </div>
     </div>
 </footer>
+<script src="js/itinerary.js"></script>
+<script src="js/tanggal.js"></script>
 </body>
 </html>
