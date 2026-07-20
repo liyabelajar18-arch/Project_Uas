@@ -277,10 +277,9 @@ body{
     background: #ffff;
     border-radius:22px;
     overflow:hidden;
-    margin: 20px 10px;
+    margin: 0;
+    transform:translateY(0);
     box-shadow:none!important;
-    margin-bottom: 20px;
-
 }
 
 .swiper-slide img{
@@ -314,6 +313,15 @@ body{
     border-radius:30px;
 
 }
+
+.swiper-button-prev{
+    left:0;
+}
+
+.swiper-button-next{
+    right:0;
+}
+
 .swiper-button-next,
 .swiper-button-prev{
     color:#0F766E;
@@ -321,6 +329,8 @@ body{
     height:50px;
     border-radius:40%;
     box-shadow:0 12px 20px rgba(0,0,0,.12);
+    top:50%;
+    transform:translateY(-50%);
 }
 
 .swiper-button-next::after,
