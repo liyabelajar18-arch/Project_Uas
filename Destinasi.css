@@ -552,7 +552,7 @@ body{
 }
 
 .footer-box ul li a:hover{
-    color:#2563EB;
+    color:#3b82f6;
 }
 
 .footer-social{
@@ -569,7 +569,6 @@ body{
     display:flex;
     align-items:center;
     justify-content:center;
-    color:#fff;
     font-size:14px;
     transition:.2s;
 }

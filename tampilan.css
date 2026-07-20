@@ -411,7 +411,7 @@ body {
     background: #0F766E;
 }
 
-/* ===================== TRIP ===================== */
+
 .trip {
     padding: 100px 8%;
     background:
@@ -692,136 +692,148 @@ body {
 }
 
 /* ===================== FOOTER ===================== */
-.footer {
-    background: #0f172a;
-    color: #fff;
-    padding: 60px 6% 25px;
+.footer{
+    background:#0f172a;
+    color:#fff;
+    padding:60px 6% 25px;
 }
 
-.footer-container {
-    display: grid;
-    grid-template-columns: 1.6fr 1fr 1fr 1.3fr 1.3fr;
-    gap: 40px;
+.footer-container{
+    display:grid;
+    grid-template-columns:1.6fr 1fr 1fr 1.3fr 1.3fr;
+    gap:40px;
 }
 
-.footer-box h2 {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    font-size: 20px;
-    margin-bottom: 16px;
+.footer-box h2{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    font-size:20px;
+    margin-bottom:16px;
 }
 
-.footer-box h2 svg {
-    width: 24px;
-    height: 24px;
-    color: #3b82f6;
+.footer-box h2 svg{
+    width:24px;
+    height:24px;
+    color:#3b82f6;
 }
 
-.footer-box h3 {
-    font-size: 16px;
-    margin-bottom: 16px;
+.footer-box h3{
+    font-size:16px;
+    margin-bottom:16px;
 }
 
-.footer-box p {
-    color: #cbd5e1;
-    font-size: 13.5px;
-    line-height: 1.7;
-    margin-bottom: 10px;
-    display: flex;
-    align-items: flex-start;
-    gap: 8px;
+.footer-box p{
+    color:#cbd5e1;
+    font-size:13.5px;
+    line-height:1.7;
+    margin-bottom:10px;
+    display:flex;
+    align-items:flex-start;
+    gap:8px;
 }
 
-.footer-box i {
-    color: #3b82f6;
-    margin-top: 2px;
+.footer-box i{
+    color:#3b82f6;
+    margin-top:2px;
 }
 
-.footer-box ul {
-    list-style: none;
+.footer-box ul{
+    list-style:none;
 }
 
-.footer-box ul li {
-    margin-bottom: 10px;
+.footer-box ul li{
+    margin-bottom:10px;
 }
 
-.footer-box ul li a {
-    color: #cbd5e1;
-    font-size: 13.5px;
-    transition: .2s;
-    text-decoration: none;
+.footer-box ul li a{
+    color:#cbd5e1;
+    font-size:13.5px;
+    transition:.2s;
 }
 
-.footer-box ul li a:hover {
-    color: #3b82f6;
+.footer-box ul li a:hover{
+    color:#3b82f6;
 }
 
-.footer-social {
-    display: flex;
-    gap: 10px;
-    margin-top: 16px;
+.footer-social{
+    display:flex;
+    gap:10px;
+    margin-top:16px;
 }
 
-.footer-social a {
-    width: 36px;
-    height: 36px;
-    border-radius: 50%;
-    background: rgba(255,255,255,.08);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
-    font-size: 14px;
-    transition: .2s;
+.footer-social a{
+    width:36px;
+    height:36px;
+    border-radius:50%;
+    background:rgba(255,255,255,.08);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:14px;
+    transition:.2s;
 }
 
-.newsletter-form {
-    display: flex;
-    gap: 8px;
-    margin-top: 6px;
+.footer-social a:hover{
+    background:#cbd5e1;
 }
 
-.newsletter-form input {
-    flex: 1;
-    padding: 11px 12px;
-    border: none;
-    border-radius: 8px;
-    font-size: 13px;
-    outline: none;
+.newsletter-form{
+    display:flex;
+    gap:8px;
+    margin-top:6px;
 }
 
-.newsletter-form button {
-    background: #ffffff;
-    border: none;
-    color: #fff;
-    width: 42px;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: .2s;
+.newsletter-form input{
+    flex:1;
+    padding:11px 12px;
+    border:none;
+    border-radius:8px;
+    font-size:13px;
+    outline:none;
 }
 
-.footer hr {
-    border: none;
-    height: 1px;
-    background: rgba(255,255,255,.1);
-    margin: 40px 0 20px;
+.newsletter-form button{
+    background:#ffffff;
+    border:none;
+    color:#fff;
+    width:42px;
+    border-radius:8px;
+    cursor:pointer;
+    transition:.2s;
 }
 
-.footer-bottom {
-    text-align: center;
+.newsletter-form button:hover{
+    background:#cbd5e1;
 }
 
-.footer-bottom p {
-    color: #94a3b8;
-    font-size: 13px;
+.footer hr{
+    border:none;
+    height:1px;
+    background:rgba(255,255,255,.1);
+    margin:40px 0 20px;
+}
+.footer-bottom{
+    text-align:center;
 }
 
-.fa-bullseye,
-.fa-eye,
-.fa-gem {
-    color: #2563EB;
+.footer-bottom p{
+    color:#94a3b8;
+    font-size:13px;
 }
+
+.fa-bullseye{
+    color:#2563EB;
+}
+
+.fa-eye{
+    color:#2563EB;
+}
+
+.fa-gem{
+    color:#2563EB;
+}
+
 @media (max-width: 991px) {
     .footer-bottom {
         flex-direction: column;
