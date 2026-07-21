@@ -321,7 +321,7 @@ a{ text-decoration:none; }
 
 .angka-item i{
     font-size:22px;
-    color:#3b82f6;
+    color:#7b9fdd;
     margin-bottom:14px;
 }
 
@@ -447,7 +447,7 @@ a{ text-decoration:none; }
     display:inline-flex;
     align-items:center;
     gap:10px;
-    background:#3b82f6;
+    background:#0e2a56;
     color:#fff;
     font-weight:600;
     font-size:14px;
@@ -458,7 +458,7 @@ a{ text-decoration:none; }
 }
 
 .btn-cta:hover{
-    background:#274c77;
+    background:#2f69ab;
 }
 .peta-section {
     padding:60px 8%;

@@ -478,7 +478,7 @@ a{ text-decoration:none; }
     position:absolute;
     left:29px;
     top:8px;
-    bottom:60px;
+    bottom:20px;
     width:2px;
     background:#e5e9ef;
 }
@@ -488,12 +488,14 @@ a{ text-decoration:none; }
 }
 .timeline-time{
     position:absolute;
-    left:-70px;
+    left:-80px;
     top:16px;
-    width:50px;
+    width:65px;
+    text-align:left;
     font-size:12px;
     font-weight:700;
     color:#555;
+    overflow: visible;
 }
 .timeline-dot{
     position:absolute;
